@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Main Container */
+
+.transaction-container {
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+    background-color: #f4f6f9;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.transaction-wrapper {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+}
+
+
+/* Main Heading */
+
+.transaction-wrapper h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #222;
+
+}
+
+
+/* Common Cards */
+
+.account-search-section,
+.selected-account,
+.transaction-form {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* Section Heading */
+
+.account-search-section h3,
+.selected-account h3,
+.transaction-form h3 {
+
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+
+/* Search Input */
+
+.account-search-section input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+}
+
+
+.account-search-section input:focus {
+
+    outline: none;
+
+    border-color: #4a90e2;
+
+}
+
+
+/* Fetch Button */
+
+.fetch-account-button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #4a90e2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.fetch-account-button:hover {
+
+    background-color: #357abd;
+
+}
+
+
+/* Selected Account */
+
+.account-detail-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    background-color: #f7f8fa;
+
+    border-radius: 7px;
+
+    border-left: 4px solid #4a90e2;
+
+}
+
+
+.account-detail-row span {
+
+    color: #666;
+
+}
+
+
+.account-detail-row strong {
+
+    color: #222;
+
+}
+
+
+/* Form Group */
+
+.transaction-form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.transaction-form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #444;
+
+}
+
+
+/* Input */
+
+.transaction-form-group input,
+.transaction-form-group select,
+.transaction-form-group textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    background-color: white;
+
+}
+
+
+/* Textarea */
+
+.transaction-form-group textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+
+}
+
+
+/* Focus */
+
+.transaction-form-group input:focus,
+.transaction-form-group select:focus,
+.transaction-form-group textarea:focus {
+
+    outline: none;
+
+    border-color: #4a90e2;
+
+    box-shadow:
+        0 0 0 3px rgba(74, 144, 226, 0.1);
+
+}
+
+
+/* Add Transaction Button */
+
+.add-transaction-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #28a745;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.add-transaction-button:hover {
+
+    background-color: #218838;
+
+}
+
+
+/* Disabled */
+
+.fetch-account-button:disabled,
+.add-transaction-button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* Error */
+
+.transaction-error {
+
+    padding: 14px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    background-color: #ffe8ec;
+
+    border: 1px solid #ffb6c1;
+
+    color: #b00020;
+
+    text-align: center;
+
+}
+
+
+/* Success */
+
+.transaction-success {
+
+    padding: 14px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    background-color: #d4edda;
+
+    border: 1px solid #a8d5b5;
+
+    color: #155724;
+
+    text-align: center;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .transaction-container {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .account-search-section,
+    .selected-account,
+    .transaction-form {
+
+        padding: 20px;
+
+    }
+
+
+    .account-detail-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+
+    }
+
+}

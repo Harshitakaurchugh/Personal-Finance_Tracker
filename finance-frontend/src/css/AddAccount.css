@@ -1,0 +1,126 @@
+.account-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#eef2f7;
+
+}
+
+.account-form{
+
+    width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.account-form h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#1565c0;
+
+}
+
+.account-form input,
+.account-form select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+}
+
+.account-form button{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#1565c0;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.account-form button:hover{
+
+    background:#0d47a1;
+
+}
+.checkbox-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:15px 0;
+
+}
+
+.checkbox-container input{
+
+    width:18px;
+
+    height:18px;
+
+    cursor:pointer;
+
+}
+
+.checkbox-container label{
+
+    margin:0;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+.form-group select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}

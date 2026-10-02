@@ -1,0 +1,115 @@
+body{
+
+    margin:0;
+
+    font-family:Arial;
+
+    background:#f4f6f9;
+
+}
+
+.register-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+}
+
+.register-card{
+
+    width:520px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+
+}
+
+.register-card h1{
+
+    color:#1565C0;
+
+    text-align:center;
+
+}
+
+.register-card h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.row{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:15px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    background:#1565C0;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#0D47A1;
+
+}
+
+p{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}

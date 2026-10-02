@@ -1,0 +1,30 @@
+package com.finance.tracker.controller;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.finance.tracker.dto.DashboardResponse;
+import com.finance.tracker.entity.User;
+import com.finance.tracker.service.DashboardService;
+
+@RestController
+@RequestMapping("/dashboard")
+public class DashboardController {
+
+    private final DashboardService dashboardService;
+
+    public DashboardController(DashboardService dashboardService) {
+        this.dashboardService = dashboardService;
+    }
+
+    @GetMapping
+    public DashboardResponse getDashboard(
+            Authentication authentication,
+            @RequestParam(name = "range", defaultValue = "1W") String range) {
+        User user = (User) authentication.getPrincipal();
+        return dashboardService.getDashboard(user, range);
+    }
+}

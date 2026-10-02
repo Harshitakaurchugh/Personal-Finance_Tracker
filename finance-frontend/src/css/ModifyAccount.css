@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Main Page */
+
+.modify-account-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 20px;
+
+    background: #f4f6f9;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.modify-account-wrapper {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+/* Main Heading */
+
+.modify-account-container h2 {
+    text-align: center;
+
+    margin: 0 0 30px 0;
+
+    color: #222;
+
+    font-size: 30px;
+}
+
+
+/* Search Box */
+
+.account-search-box {
+    width: 100%;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 20px;
+}
+
+
+.account-search-box h3 {
+    margin: 0 0 20px 0;
+
+    color: #333;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+
+/* Account Number Input */
+
+.account-search-box input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+.account-search-box input:focus {
+    outline: none;
+
+    border-color: #4a90e2;
+
+    box-shadow:
+        0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+
+/* Buttons */
+
+.fetch-button,
+.update-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* Fetch Button */
+
+.fetch-button {
+    background: #1565c0;
+}
+
+
+.fetch-button:hover {
+    background: #357abd;
+}
+
+
+/* Update Button */
+
+.update-button {
+    margin-top: 10px;
+
+    background: #28a745;
+}
+
+
+.update-button:hover {
+    background: #218838;
+}
+
+
+/* Disabled Button */
+
+.fetch-button:disabled,
+.update-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* Error Message */
+
+.error-message {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    color: #b00020;
+
+    background: #ffe8ec;
+
+    border: 1px solid #ffb6c1;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* Success Message */
+
+.success-message {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    color: #155724;
+
+    background: #d4edda;
+
+    border: 1px solid #a8d5b5;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* Account Details Card */
+
+.account-details {
+    width: 100%;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.account-details h3 {
+    margin: 0 0 25px 0;
+
+    text-align: center;
+
+    color: #333;
+
+    font-size: 22px;
+}
+
+
+/* Non-editable Account Information */
+
+.account-info {
+    margin-bottom: 25px;
+}
+
+
+.info-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    background: #f7f8fa;
+
+    border-radius: 7px;
+
+    border-left: 4px solid #4a90e2;
+}
+
+
+.info-row span {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+.info-row strong {
+    color: #222;
+
+    text-align: right;
+
+    word-break: break-word;
+}
+
+
+/* Editable Heading */
+
+.editable-heading {
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+
+/* Input and Select */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 7px;
+
+    background: white;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #4a90e2;
+
+    box-shadow:
+        0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .modify-account-container {
+        padding: 25px 15px;
+    }
+
+
+    .modify-account-container h2 {
+        font-size: 25px;
+    }
+
+
+    .account-search-box,
+    .account-details {
+        padding: 20px;
+    }
+
+
+    .info-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+
+    .info-row strong {
+        text-align: left;
+    }
+
+}
