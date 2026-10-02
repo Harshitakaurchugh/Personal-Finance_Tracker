@@ -359,3 +359,23 @@ java.lang.RuntimeException: Error saving transaction: could not execute statemen
 2026-10-02 17:15:24.941 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
 2026-10-02 17:15:24.942 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
 2026-10-02 17:15:24.943 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-10-02 17:24:46.638 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /transactions/addtransaction
+2026-10-02 17:24:46.654 DEBUG o.s.security.web.FilterChainProxy - Securing POST /transactions/addtransaction
+2026-10-02 17:24:46.668 DEBUG c.f.t.s.JwtAuthenticationFilter - JwtAuthenticationFilter extracted subject from token: harshita225@gmail.com
+2026-10-02 17:24:46.710 DEBUG c.f.t.s.JwtAuthenticationFilter - JwtAuthenticationFilter loaded user for email=harshita225@gmail.com: 6
+2026-10-02 17:24:46.711 DEBUG c.f.t.s.JwtAuthenticationFilter - JwtAuthenticationFilter token is valid for user id=6
+2026-10-02 17:24:46.713 DEBUG o.s.security.web.FilterChainProxy - Secured POST /transactions/addtransaction
+2026-10-02 17:24:46.729 INFO  c.f.t.c.TransactionController - transaction request transactiontype DEBIT transactionamount 10000 accountnumber 56789876
+2026-10-02 17:24:46.734 DEBUG c.f.tracker.service.AccountService - Validating account ownership for user=aakarshi and accountNumber=56789876
+2026-10-02 17:24:46.742 DEBUG c.f.tracker.service.AccountService - Account ownership validation result for user=aakarshi and accountNumber=56789876: true
+2026-10-02 17:24:46.743 INFO  c.f.t.service.TransactionService - inside transaction service add transaction method
+2026-10-02 17:24:46.743 INFO  c.f.t.service.TransactionService - transaction type DEBIT
+2026-10-02 17:24:46.743 DEBUG c.f.tracker.service.AccountService - Validating account ownership for user=aakarshi and accountNumber=56789876
+2026-10-02 17:24:46.749 DEBUG c.f.tracker.service.AccountService - Account ownership validation result for user=aakarshi and accountNumber=56789876: true
+2026-10-02 17:24:46.756 INFO  c.f.tracker.service.AccountService - Information on account for accountnumber= 56789876account.getaccountName()=klh.account.getAccountHolderName()=gbklkjaccount.getAccountType()=SAVINGSaccount.getCurrency()=KWDaccount.getBankName()=fghjcewaccount.getBranchName()=mumbaiaccount.getIfscCode()=hdfc98765haccount.getOpeningbalance()=20000.00account.getCurrentbalance()=20000.00account.getAccountHolderID()=15account.getAccountStatus()=ACTIVE
+2026-10-02 17:24:46.760 DEBUG c.f.tracker.service.AccountService - Starting modifyAccount for user=aakarshi and accountNumber=56789876
+2026-10-02 17:24:46.764 INFO  c.f.tracker.service.AccountService - Mapped request to account entity for accountNumber= 56789876accountHolderName= gbklkjaccountName= klh.accountType= SAVINGScurrency= KWDbankName= fghjcewbranchName= mumbaiifscCode= hdfc98765hopeningBalance= 20000.00accountHolderID= 15
+2026-10-02 17:24:46.774 INFO  c.f.tracker.service.AccountService - Mapped request to account entity which is saved for accountNumber= 56789876accountHolderName= gbklkjaccountName= klh.accountType= SAVINGScurrency= KWDbankName= fghjcewbranchName= mumbaiifscCode= hdfc98765hopeningBalance= 20000.00accountHolderID= 15
+2026-10-02 17:24:46.774 INFO  c.f.tracker.service.AccountService - Modified account accountNumber=56789876 for user=aakarshi, id=6
+2026-10-02 17:24:46.774 INFO  c.f.t.service.TransactionService - TransactionAmount: 10000
+2026-10-02 17:24:46.774 INFO  c.f.t.service.TransactionService - transaction amount10000
